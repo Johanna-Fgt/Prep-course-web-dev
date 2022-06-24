@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link href="./style.scss" rel="stylesheet" type="text/css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>The Argo || Journey</title>
+  </head>
+  <body>
+    <header>
+      <div>
+        <img src="./assets/the-argo-logo-black.png" alt="Logo The Argo" />
+        <button
+          id="nav-toggle"
+          aria-label="Toggle navigation"
+          onclick="myFunction()"
+        >
+          <i class="fa fa-bars hide"></i>
+        </button>
+      </div>
+      <nav id="navigation">
+        <ul>
+          <li>
+            <a href="/index">Home</a>
+          </li>
+          <li>
+            <a href="/index#history">History</a>
+          </li>
+          <li>
+            <a href="/heroes.html">Heroes</a>
+          </li>
+          <li>
+            <a href="/inventory" class="active">Journey</a>
+          </li>
+          <li>
+            <a href="/contact.html">Contacts</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="journey">
+      <h2 style="margin-bottom: 2rem;">Journey</h2>
+      <article>
+        <div>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla,
+            veniam?<br />
+            Voluptates quo molestiae dignissimos ab, quod, natus consequuntur
+            voluptatem nobis repellat omnis expedita, eius voluptate illo
+            aperiam.<br />
+            Suscipit magni sequi at? Assumenda, animi! Amet saepe repellendus
+            expedita perferendis laboriosam hic quasi quis quaerat excepturi
+            optio reiciendis nobis totam nesciunt aperiam ipsum fugiat at, fuga
+            itaque delectus consequuntur cum neque quidem odio distinctio. Ex,
+            sapiente ea.
+          </p>
+          <a href="https://argonautica-network.eu/" target="_blank" class="btn"
+            >Know more
+          </a>
+        </div>
+        <figure>
+          <img
+            src="assets/MapoftheVoyageoftheArgonauts.jpg"
+            alt="The Map Argonautica"
+          />
+          <figcaption>
+            Antique map of the route of Jason and the Argonauts, by A. Ortelius.
+          </figcaption>
+        </figure>
+      </article>
+    </section>
+
+    <section id="inventory">
+      <h2>Inventory</h2>
+      <table>
+        <thead>
+          <tr style="background: whitesmoke;">
+            <th>Item</th>
+            <th>Amount</th>
+            <th>Duration</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Water canisters</td>
+            <td>102</td>
+            <td>4 weeks</td>
+          </tr>
+          <tr>
+            <td>Bread</td>
+            <td>35</td>
+            <td>7 days</td>
+          </tr>
+          <tr>
+            <td>Goats</td>
+            <td>20</td>
+            <td>2 weeks</td>
+          </tr>
+          <tr>
+            <td>Sandals</td>
+            <td>99</td>
+            <td>Eternity</td>
+          </tr>
+        </tbody>
+      </table>
+      <figcaption>
+        <em>Must be found : the missing sandal.</em>
+      </figcaption>
+    </section>
+
+    <footer>
+      <img src="./assets/the-argo-logo-light.png" alt="Logo The Argo" />
+      <p>
+        This page is an exercice by the Wild Code School, the 10-hour Prep
+        Course, aiming to make you discover the basics of web development. Do
+        you want to give it a try ?
+      </p>
+      <a
+        href="https://prepcourse.wildcodeschool.com/fr/online-registration"
+        target="_blank"
+        title="Wild Code School"
+        style="padding-top: 2.5rem;"
+        class="btn"
+      >
+        <img
+          src="./assets/wcs_icon.png"
+          alt="Logo Wild Code School"
+          width="100px"
+        />
+      </a>
+      <p><em>Johanna-Fgt 2022 || Wild Code School</em></p>
+      <a href="#journey"
+        ><img
+          src="./assets/up-arrow.png"
+          alt="Arrow Up"
+          title="Icon made by dmitri13 from Flaticon"
+          class="arrow"
+      /></a>
+    </footer>
+
+    <script>
+      function myFunction() {
+        document.getElementById("navigation").classList.toggle("open");
+      }
+    </script>
+  </body>
+</html>

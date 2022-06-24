@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=§, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link href="./style.scss" rel="stylesheet" type="text/css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>The Argo || Our Argo Heroes</title>
+  </head>
+  <body>
+    <header>
+      <div>
+        <img src="./assets/the-argo-logo-black.png" alt="Logo The Argo" />
+        <button
+          id="nav-toggle"
+          aria-label="Toggle navigation"
+          onclick="myFunction()"
+        >
+          <i class="fa fa-bars hide"></i>
+        </button>
+      </div>      <nav id="navigation">
+        <ul>
+          <li>
+            <a href="/index">Home</a>
+          </li>
+          <li>
+            <a href="/index#history">History</a>
+          </li>
+          <li>
+            <a href="/heroes" class="active">Heroes</a>
+          </li>
+          <li>
+            <a href="/inventory.html">Journey</a>
+          </li>
+          <li>
+            <a href="/contact.html">Contacts</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <section id="heroes">
+      <h2>Inspiration</h2>
+      <div class="container-heroes">
+        <div>
+          <img src="./assets/ares.jpg" alt="Ares" />
+          <h3>Ares</h3>
+          <p>" We shall have fun! "</p>
+        </div>
+        <div>
+          <img src="./assets/artemis.jpg" alt="Artemis" />
+          <h3>Artemis</h3>
+          <p>" Know thyself. "</p>
+        </div>
+        <div>
+          <img src="./assets/hercules.jpg" alt="Hercules" />
+          <h3>Hercules</h3>
+          <p>
+            " I am on my way. I can go the distance. I don't care how far, somehow
+            I will be strong. "
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="team">
+      <h2>Our Argo Heroes<h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa distinctio, voluptatibus quod officia tenetur voluptate molestiae laudantium recusandae. Dignissimos repellat reiciendis accusamus, veritatis odio, beatae sit ab dolores illum modi laborum ullam. Earum, perspiciatis dolore!
+      </p>
+      <a
+        href="https://en.wikipedia.org/wiki/Argonauts#:~:text=The%20Argonauts%20(%2F%CB%88%C9%91%CB%90r%C9%A1,to%20find%20the%20Golden%20Fleece."
+            target="_blank"
+            class="btn"
+            >Know more
+      </a>
+    </section>
+
+    <section id="navis">
+        <h2>Argo Navis<h2>
+        <article>
+          <div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa distinctio, voluptatibus quod officia tenetur voluptate molestiae laudantium recusandae. Dignissimos repellat reiciendis accusamus, veritatis odio, beatae sit ab dolores illum modi laborum ullam. Earum, perspiciatis dolore!
+            </p>
+            <a href="https://en.wikipedia.org/wiki/Argo_Navis" target="_blank" class="btn">Know more
+            </a>
+            </div>
+            <figure>
+              <img src="./assets/Argo_Navis_Hevelius.jpg" alt="Argo Navis">
+              <figcaption>The constellation Argo Navis drawn by Johannes Hevelius</figcaption>
+            </figure>
+          </article> 
+    </section>
+
+    <footer>
+      <img src="./assets/the-argo-logo-light.png" alt="Logo The Argo" />
+      <p>
+        This page is an exercice by the Wild Code School, the 10-hour Prep
+        Course, aiming to make you discover the basics of web development. Do
+        you want to give it a try ?
+      </p>
+      <a
+        href="https://prepcourse.wildcodeschool.com/fr/online-registration"
+        target="_blank"
+        title="Wild Code School"
+        style="padding-top: 2.5rem;"
+        class="btn"
+      >
+        <img
+          src="./assets/wcs_icon.png"
+          alt="Logo Wild Code School"
+          width="100px"
+        />
+      </a>
+      <p><em>Johanna-Fgt 2022 || Wild Code School</em></p>
+      <a href="#heroes"
+        ><img
+          src="./assets/up-arrow.png"
+          alt="Arrow Up"
+          title="Icon made by dmitri13 from Flaticon"
+          class="arrow"
+      /></a>
+    </footer>
+
+    <script>
+      function myFunction() {
+        document.getElementById("navigation").classList.toggle("open");
+      }
+    </script>
+  </body>
+</html>

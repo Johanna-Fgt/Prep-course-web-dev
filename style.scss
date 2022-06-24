@@ -1,0 +1,282 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap");
+$paddingsection: 4rem;
+$paddingspecial: 15vh 4rem;
+$borderradius: 25px;
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: whitesmoke;
+  font-family: "Poppins", Arial sans-serif;
+}
+h2 {
+  text-align: center;
+  margin: 1rem;
+}
+p{
+  margin: 4rem;
+  font-size: 1rem;
+  font-weight: lighter;
+}
+figcaption{
+  font-size: 0.7rem;
+  text-align: center;
+}
+article{
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  width: 100%;
+  text-align: center;
+  div{
+    width: 50%;
+  }
+}
+.btn {
+  text-decoration: none;
+  padding: 1rem;
+  box-shadow: -1px 3px 19px -2px rgba(0,0,0,0.3);
+  border-radius: $borderradius;
+  font-size: 1rem;
+  font-weight: lighter;
+  &:hover {
+    font-weight: bold;
+    color: white;
+    background: black;
+  } 
+}
+header {
+  position: fixed;
+  top: 0;
+  background-color: whitesmoke;
+  width: 100%;
+  height: 15vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  img {
+    width: 80px;
+    margin-left: 2rem;
+  }
+  ul {
+    display: flex;
+    list-style: none;
+    text-decoration: none;
+  }
+  a {
+    margin: 1rem;
+    text-decoration: none;
+    border: none;
+    padding: 0.5rem;
+    &:hover {
+      font-weight: bold;
+      background: transparent;
+      border: 0.5px black solid;
+      padding: 0.5rem;
+      border-radius: $borderradius;
+    }
+    &:visited {
+      color: black;
+    }
+  }
+  .active {
+    color: grey;
+    text-decoration: underline;
+  }
+  #nav-toggle{
+    display: none;
+  }
+}
+#welcome {
+  color: white;
+  text-align: center;
+  font-size: 2rem;
+  padding: 5vh 0;
+  .intro{
+    background-image: url("assets/argo_intro.jpg");
+    max-width: 100%;
+    height: 80vh;
+    background-size: cover;
+  }
+  h1{
+    padding-top: 15%;
+  }
+}
+#history {
+  padding: $paddingspecial;
+  img{
+    width: 350px;
+  }
+}
+#origin{
+  padding: $paddingsection;
+} 
+#heroes{
+  padding: 15vh 4rem 0 4rem; 
+  p{
+    margin: 0;
+  }
+  .container-heroes {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    height: fit-content;
+    margin-top: 5rem;
+    div {
+      width: 30%;
+      min-width: 200px;
+      max-height: 50vh;
+    }
+    img {
+      width: 90%;
+      aspect-ratio: 1;
+      border-radius: 50%;
+    }
+  }
+}
+#team{
+  padding: $paddingsection; 
+}
+#navis{
+  padding: $paddingsection;
+  img{
+    width: 80%;
+  }
+}
+#journey{
+  padding: $paddingspecial;
+  img{
+    width: 80%;
+  }
+}
+#inventory{
+  padding: $paddingsection;
+  text-align: center;
+  table{
+    width: 50%;
+    margin: auto;
+    margin-top: 2rem;
+    padding: 1rem;
+    border: 2px white solid;
+    tr{
+      background-color: white;
+    }
+  }
+}
+#contact{
+  padding: $paddingspecial;
+  input, textarea, label{
+    border: none;
+    border-radius: $borderradius;
+    padding: 1rem;
+    margin: 1rem;
+  }
+  .container-form{
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+  }
+  form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+footer{
+  padding: $paddingsection;
+  text-align: center;
+  color: white;
+  background: black;
+  position: relative;
+  .btn{
+    border: 2px white solid;
+    &:hover{
+      background: white;
+    }
+  }
+  .arrow{
+    position: absolute;
+    right: 3rem;
+    bottom: 3rem;
+    width: 40px;
+  }
+}
+
+@media all and(max-width: 1024px){
+  article{
+    flex-direction: column;
+    div{
+      width: 100%;
+      margin-bottom: 2rem;
+    }
+  }
+  .container-heroes{
+    flex-direction: column;
+    margin-bottom: 4rem;
+    div{
+      margin: 2rem;
+    }
+  }
+}
+@media all and (max-width: 768px){
+  .container-form{
+    flex-direction: column;
+  }
+}
+@media all and (max-width: 700px) {
+  header {
+    height: fit-content;
+    flex-direction: column;
+    justify-content: space-around;
+    background: transparent;
+    overflow: hidden;
+    div{
+      width: 100%;
+      background: whitesmoke;
+      padding: 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      z-index: 10;
+    }
+    nav{
+      background: whitesmoke;
+      transform: translateY(-100%);
+      transition: all 1s ease-in;
+      width: 100%;
+      text-align: center;
+    }
+    ul {
+      flex-direction: column;
+      font-size: 1.5rem;
+      line-height: 3rem;
+    }
+    .open{
+      transform: translateY(0%);
+      transition: all 1s ease-out;
+    }
+    img{
+      margin: 0;
+    }
+    a {
+      padding: 0 8rem;
+      &:hover {
+        border: none;
+        padding: 0;
+      }
+    }
+    #nav-toggle{
+      display: block;
+      border: none;
+      border-radius: $borderradius;
+      background-color: white;
+      padding: 1rem;
+      z-index: 100;
+    }
+  }
+}
