@@ -53,7 +53,10 @@ article div {
   border-radius: 25px;
   font-size: 1rem;
   font-weight: lighter;
+<<<<<<< HEAD
   color: black;
+=======
+>>>>>>> d4f4e1c0445ddfa39a3c3d276f3b2988732e567f
 }
 
 .btn:hover {
@@ -62,10 +65,13 @@ article div {
   background: black;
 }
 
+<<<<<<< HEAD
 .btn:visited {
   color: black;
 }
 
+=======
+>>>>>>> d4f4e1c0445ddfa39a3c3d276f3b2988732e567f
 header {
   position: fixed;
   top: 0;
@@ -101,13 +107,20 @@ header a {
   text-decoration: none;
   border: none;
   padding: 0.5rem;
+<<<<<<< HEAD
   color: black;
+=======
+>>>>>>> d4f4e1c0445ddfa39a3c3d276f3b2988732e567f
 }
 
 header a:hover {
   font-weight: bold;
   background: transparent;
+<<<<<<< HEAD
   border: 1px black solid;
+=======
+  border: 0.5px black solid;
+>>>>>>> d4f4e1c0445ddfa39a3c3d276f3b2988732e567f
   padding: 0.5rem;
   border-radius: 25px;
 }
@@ -134,13 +147,21 @@ header #nav-toggle {
 
 #welcome .intro {
   background-image: url("assets/argo_intro.jpg");
+<<<<<<< HEAD
   width: 100%;
+=======
+  max-width: 100%;
+>>>>>>> d4f4e1c0445ddfa39a3c3d276f3b2988732e567f
   height: 80vh;
   background-size: cover;
 }
 
 #welcome h1 {
+<<<<<<< HEAD
   padding: 15%;
+=======
+  padding-top: 15%;
+>>>>>>> d4f4e1c0445ddfa39a3c3d276f3b2988732e567f
 }
 
 #history {
@@ -151,6 +172,13 @@ header #nav-toggle {
   width: 350px;
 }
 
+<<<<<<< HEAD
+=======
+#origin {
+  padding: 4rem;
+}
+
+>>>>>>> d4f4e1c0445ddfa39a3c3d276f3b2988732e567f
 #heroes {
   padding: 15vh 4rem 0 4rem;
 }
@@ -179,7 +207,11 @@ header #nav-toggle {
 #heroes .container-heroes div {
   width: 30%;
   min-width: 200px;
+<<<<<<< HEAD
   height: 50vh;
+=======
+  max-height: 50vh;
+>>>>>>> d4f4e1c0445ddfa39a3c3d276f3b2988732e567f
 }
 
 #heroes .container-heroes img {
@@ -225,10 +257,13 @@ header #nav-toggle {
   background-color: white;
 }
 
+<<<<<<< HEAD
 #inventory table tr td {
   padding: 1rem;
 }
 
+=======
+>>>>>>> d4f4e1c0445ddfa39a3c3d276f3b2988732e567f
 #contact {
   padding: 15vh 4rem;
 }
@@ -269,9 +304,12 @@ footer {
   color: white;
   background: black;
   position: relative;
+<<<<<<< HEAD
   bottom: 0;
   left: 0;
   width: 100%;
+=======
+>>>>>>> d4f4e1c0445ddfa39a3c3d276f3b2988732e567f
 }
 
 footer .btn {
@@ -391,6 +429,7 @@ footer .arrow {
     padding: 1rem;
     z-index: 100;
   }
+<<<<<<< HEAD
   #welcome h1 {
     padding-top: 35%;
   }
@@ -416,5 +455,7 @@ footer .arrow {
   footer {
     padding: 2rem;
   }
+=======
+>>>>>>> d4f4e1c0445ddfa39a3c3d276f3b2988732e567f
 }
 /*# sourceMappingURL=style.css.map */
