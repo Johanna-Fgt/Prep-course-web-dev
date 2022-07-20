@@ -237,6 +237,22 @@ footer{
   }
 }
 @media all and (max-width: 700px) {
+  #welcome {
+    h1{
+      padding-top: 35%;
+    }
+  }
+  #inventory {
+    table {
+      width: 90%;
+    }
+  }
+}
+@media all and (max-width: 500px) {
+  p{
+    font-size: .8rem;
+    text-align: justify;
+  }
   header {
     height: fit-content;
     flex-direction: column;
@@ -286,22 +302,6 @@ footer{
       padding: 1rem;
       z-index: 100;
     }
-  }
-  #welcome {
-    h1{
-      padding-top: 35%;
-    }
-  }
-  #inventory {
-    table {
-      width: 90%;
-    }
-  }
-}
-@media all and (max-width: 500px) {
-  p{
-    font-size: .8rem;
-    text-align: justify;
   }
   #heroes{
     p{
